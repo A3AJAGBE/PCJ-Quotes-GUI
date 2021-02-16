@@ -12,6 +12,10 @@ quote_text = canvas.create_text(150, 207, text="Priyanka Quote Goes HERE", width
                                 fill="white")
 canvas.grid(row=0, column=0)
 
+# Add PCJ image to button
+pc_img = PhotoImage(file="pc.png")
+pc_button = Button(image=pc_img, highlightthickness=0)
+pc_button.grid(row=1, column=0)
 
 # Keep the interface open until exited
 interface.mainloop()
